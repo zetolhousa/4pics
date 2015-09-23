@@ -12,6 +12,7 @@ def combinator(characters, length):
     return perms
 
 with open('/home/tlhousa/Downloads/eng_words/words2.txt') as words:
+    result = []
     for word in words:
         l = len(word)-1
         if length == l:
@@ -21,4 +22,10 @@ with open('/home/tlhousa/Downloads/eng_words/words2.txt') as words:
                 s1.sort()
                 s2.sort()
                 if s1 == s2:
-                    print(word)
+                    result.append(word)
+
+answers = set(result)
+i = 0
+for a in answers:
+    i = i+1
+    print(i, "-", a)
