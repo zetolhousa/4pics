@@ -17,5 +17,7 @@ The solution
 This is a Python3 implementation to solve the popular game '4 pics 1 word'. It's all bare bones at the moment. I will be refactoring/optimizing it later(hopefully).
 Just enter the length of the empty space of the answer and then enter the character clues given. It will result in a narrowed down bunch of possible words. Making the players job a little easier ;)
 
+##### Example problem
 ![sample problem](https://www.dropbox.com/s/35mqejohivt85ae/FB_IMG_1443067833702.jpg?raw=1)
+##### Possible answers:
 ![possible answers](https://www.dropbox.com/s/dsy7nj0bz08x51x/FB_IMG_1443067841434.jpg?raw=1)
