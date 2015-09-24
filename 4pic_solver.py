@@ -11,21 +11,25 @@ def combinator(characters, length):
         perms.append(res)
     return perms
 
-with open('/home/tlhousa/Downloads/eng_words/words2.txt') as words:
-    result = []
-    for word in words:
-        l = len(word)-1
-        if length == l:
-            for c in combinator(characters, length):
-                s1 = list(c)
-                s2 = list(word.rstrip())
-                s1.sort()
-                s2.sort()
-                if s1 == s2:
-                    result.append(word)
+def main():
+    with open('/home/tlhousa/Downloads/eng_words/words2.txt') as words:
+        result = []
+        for word in words:
+            l = len(word)-1
+            if length == l:
+                for c in combinator(characters, length):
+                    s1 = list(c)
+                    s2 = list(word.rstrip())
+                    s1.sort()
+                    s2.sort()
+                    if s1 == s2:
+                        result.append(word)
 
-answers = set(result)
-i = 0
-for a in answers:
-    i = i+1
-    print(i, "-", a)
+    answers = set(result)
+    i = 0
+    for a in answers:
+        i = i+1
+        print(i, "-", a)
+
+if __name__ == '__main__':
+    main()
