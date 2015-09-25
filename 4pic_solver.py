@@ -27,7 +27,7 @@ def main():
 
     answers = set(result)
     i = 0
-    for a in answers:
+    for a in sorted(answers):
         i = i+1
         print(i, "-", a)
 
